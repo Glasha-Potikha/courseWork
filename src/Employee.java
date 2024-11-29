@@ -2,9 +2,9 @@ import java.util.Objects;
 
 public class Employee {
     private static int counter;
-    private int id;
+    private final int id;
     private int department;
-    private String fullName;
+    private final String fullName;
     private int salary;
 
     public Employee(int department, String fullName, int salary) {
