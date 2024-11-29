@@ -62,6 +62,6 @@ public class Employee {
                 department +
                 " " + fullName +
                 " в месяц получает " + salary +
-                " рублей в месяц";
+                " рублей в месяц" + " - id " + id;
     }
 }
