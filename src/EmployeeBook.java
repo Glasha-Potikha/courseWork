@@ -1,4 +1,9 @@
-public record EmployeeBook(Employee[] employees) {
+public class EmployeeBook {
+    private final Employee[] employees;
+
+    public EmployeeBook(Employee[] employees) {
+        this.employees = employees;
+    }
 
     //новые методы:
     //4.a
@@ -61,7 +66,7 @@ public record EmployeeBook(Employee[] employees) {
     }
 
     public int getAverageSalary() {
-        return getTotalSalary() / employees().length;
+        return getTotalSalary() / employees.length;
     }
 
     public int getMinSalary() {
