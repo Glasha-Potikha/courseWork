@@ -2,9 +2,9 @@ import java.util.Objects;
 
 public class Employee {
     private static int counter;
-    private int id;
+    private final int id;
     private int department;
-    private String fullName;
+    private final String fullName;
     private int salary;
 
     public Employee(int department, String fullName, int salary) {
@@ -62,6 +62,6 @@ public class Employee {
                 department +
                 " " + fullName +
                 " в месяц получает " + salary +
-                " рублей в месяц";
+                " рублей в месяц" + " - id " + id;
     }
 }
